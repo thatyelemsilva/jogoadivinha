@@ -1,0 +1,15 @@
+# jogo 'adivinha o número' >>>READ.ME
+adivinha_o_numero=0
+print("olá, qual é o seu nome?")
+nome= input( )
+print((nome) + ", agora vamos brincar de adivinhar um numero?")
+numero_secreto=9
+adivinha_limite=3
+while adivinha_o_numero < adivinha_limite:
+    adivinha=int(input('adivinha: ') )
+    adivinha_o_numero += 1
+    if adivinha == numero_secreto:
+        print("parabéns " + (nome)+  ", você venceu!")
+        break
+else:
+    print("que pena " + (nome) + ", você perdeu!")
